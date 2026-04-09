@@ -20,7 +20,7 @@ def main():
     logging.info('Request: %r', request.json)
     response = {
         'session': request.json['session'],
-        'version': request.json['version']
+        'version': request.json['version'],
         'response': {
             'end_session': False
         }
