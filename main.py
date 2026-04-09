@@ -21,9 +21,9 @@ def main():
     response = {
         'session': request.json['session'],
         'version': request.json['version']
-        # 'response': {
-        #     'end_session': False
-        # }
+        'response': {
+            'end_session': False
+        }
     }
     handle_dialog(response, request.json)
     logging.info('Response: %r', response)
