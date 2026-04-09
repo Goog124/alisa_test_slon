@@ -20,10 +20,10 @@ def main():
     logging.info('Request: %r', request.json)
     response = {
         'session': request.json['session'],
-        'version': request.json['version'],
-        'response': {
-            'end_session': False
-        }
+        'version': request.json['version']
+        # 'response': {
+        #     'end_session': False
+        # }
     }
     handle_dialog(response, request.json)
     logging.info('Response: %r', response)
